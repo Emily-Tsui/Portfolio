@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Welcome to my portofolio! Displays projects, career, resume, and an about me section">
+    <title>Portfolio Emily Tsui</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+    <header> <!--responsible for displaying main title, logo, image, and navigation -->
+        <h1>Welcome, my name is Emily Tsui!</h1>
+        <h1>Checking Git</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="youtubechannel.html">YouTube Channel</a></li>
+            </ul>   
+        </nav>  
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" stroke="black" stroke-width="4" fill="yellow" />
+            <circle cx="35" cy="40" r="5" fill="black" />
+            <circle cx="65" cy="40" r="5" fill="black" />
+            <path d="M35 65 Q50 80 65 65" stroke="black" stroke-width="4" fill="transparent" />
+        </svg>
+        <figure>
+            <img src="./images/P1012957.JPG" alt="A white with a green roof temple behind a path with tall green trees."/>
+            <figcaption>Tokyo, Japan</figcaption>
+        </figure>
+    </header>
+    
+    <main>
+
+        <section id="about"> 
+            <h2>My Story</h2>
+            <p>Registered nurse for 4+ years interested in providing services creating websites.</p>
+            <p>Currently, pursuing a computer science degree and spending extra time learning full stack development. This website is created with HTML, CSS, and Javascript.</p>
+        </section> 
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article><h3>Nurse Forum</h3></article>
+            <article><h3>SQL GreenWorks Landscaping</h3></article>
+            <article><h3>Project Coming Soon!</h3></article>
+        </section> 
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+
+            <form action="" method="POST" id="form-id">
+                <fieldset>
+                <label for="full-name">Name (required):</label> 
+                <input
+                    required
+                    type="text"
+                    name="name"        
+                    id="full-name"
+                    minlength="2"
+                    maxlength="64"
+                    placeholder="John Doe"
+                >
+
+                <label for="email">Email Address (Required field):</label>
+                <input
+                    required
+                    type="email"
+                    name="email"        
+                    id="email"
+                    minlength="4"
+                    maxlength="64"
+                    placeholder="example@email.com"
+                > <!-- Name attribute used to identify form data after submitted to the server-->
+                
+                <label for="comments">Other Comments?</label>
+                <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+                </fieldset>
+
+                
+                
+            </form>
+            <button type="submit" id="button-id form-id" aria-labelledby="">Submit Form</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section>
+            <h2>Contact Information</h2>
+            <address>
+                <p><a href="tel:5555555555">555-555-5555</a></p>
+                <p><a href="mailto:fake@email.com">fake@email.com</a></p>
+            </address>
+        </section>
+
+        <p>&copy; Emily Tsui 2025</p>
+
+    </footer>
+
+</body>
+
+</html>
