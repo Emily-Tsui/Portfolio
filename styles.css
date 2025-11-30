@@ -1,22 +1,44 @@
+html {
+    width: auto;
+    height: auto;
+}
+
+figure {
+    /* Centering an image needs display block, width, margin left and right set to auto */
+    display: block; 
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img {
     max-width: 400px;
     max-height: 500px;
+   
 }
 
 header {
     font-size: 20px;
     font-weight: normal;
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px; 
 }
 
+#container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
-    text-align: left;
+    width: 200px;
+    margin-left: 20px;
 }
 
 h2 {
-    text-align: right;
+    margin-right: 20px;
+    font-size: 20px;
+    align-self: center;
+    
 }
 
 
@@ -26,7 +48,11 @@ p {
 
 
 nav{
-    text-align: center;
+    display: flex; 
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto; 
+    /* text-align: center; */
 }
 
 main {
@@ -36,11 +62,16 @@ main {
 }
 
 form {
-    width: 400px;
+    width: nowrap;
+}
+
+label {
+    display: block;
 }
 
 input {
     width: 400px;
+    display: block;
 }
 
 textarea {
