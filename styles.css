@@ -1,14 +1,19 @@
+/* * {
+    outline: 2px solid blue;
+} */
+
 html {
     width: auto;
     height: auto;
 }
 
 figure {
-    /* Centering an image needs display block, width, margin left and right set to auto */
+    /* Centering an image needs width, margin left and right set to auto */
     display: block; 
     width: 260px;
     margin-left: auto;
     margin-right: auto;
+    /* Margin left and right is just moving with the webpage */
 }
 
 img {
@@ -47,12 +52,19 @@ p {
 }
 
 
-nav{
+/*nav{
     display: flex; 
     width: 220px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto; */
     /* text-align: center; */
+/*}*/
+
+#container2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
 main {
@@ -62,7 +74,19 @@ main {
 }
 
 form {
-    width: nowrap;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset {
+    border: 1px solid black;
+    border-radius: 30px;
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 label {
@@ -70,10 +94,15 @@ label {
 }
 
 input {
-    width: 400px;
+    width: 300px;
     display: block;
+
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 textarea {
-    width: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 2px;
 }

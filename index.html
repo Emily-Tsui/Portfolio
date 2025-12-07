@@ -11,16 +11,21 @@
 
 <body>
     <header> <!--responsible for displaying main title, logo, image, and navigation -->
-        <h1>Emily Tsui Portfolio</h1>
-        <h2>Developer | Registered Nurse | Sewing</h2>
-        <nav>
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="youtubechannel.html">YouTube Channel</a></li>
-            </ul>   
-        </nav>  
+        <div id="container1">
+            <h1>Emily Tsui Portfolio</h1>
+            <h2>Developer | Registered Nurse | Sewing</h2>
+        </div>
+        <div id="container2">
+            <nav>
+                <ul>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="youtubechannel.html">YouTube Channel</a></li>
+                </ul>   
+            </nav>  
+        </div>
+        
         <figure>
             <img src="./images/P1012957.JPG" alt="A white with a green roof temple behind a path with tall green trees."/>
             <figcaption>Tokyo, Japan</figcaption>
@@ -55,6 +60,7 @@
                     minlength="2"
                     maxlength="64"
                     placeholder="John Doe"
+                    autocomplete="cc-given-name"
                 >
 
                 <label for="email">Email Address (Required field):</label>
@@ -66,9 +72,10 @@
                     minlength="4"
                     maxlength="64"
                     placeholder="example@email.com"
+                    autocomplete="off"
                 > <!-- Name attribute used to identify form data after submitted to the server-->
                 
-                <label for="comments">Other Comments?</label>
+                <label for="comments">Questions or Comments?</label>
                 <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
                 </fieldset>
        
@@ -82,6 +89,19 @@
 
         <section>
             <h4>Social</h4>
+                <figure>
+                    <a class="twitter-timeline" href="https://x.com/Cheesemilyy">
+                        <img src="./images/x-logo-black.png" alt="X or Twitter black logo."/>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </a> 
+                </figure>
+                <figure>
+                    <a class="linkedin-profile" href="https://www.linkedin.com/in/tsuiemily/">
+                        <img src="./images/LI-In-Bug.png" alt="X or Twitter black logo."/>
+                        <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                    </a> 
+                </figure>
+            
             <h4>Contact Information</h4>
             <address>
                 <p><a href="tel:5555555555">555-555-5555</a></p>
