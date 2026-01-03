@@ -12,32 +12,36 @@
 <body>
     <header> <!--responsible for displaying main title, logo, image, and navigation -->
         <div id="container1">
-            <h1>Emily Tsui Portfolio</h1>
-            <h2>Developer | Registered Nurse | Sewing</h2>
+            <h1>Welcome! I am Emily Tsui</h1>
+            <h2>Developer | Registered Nurse</h2>
         </div>
         <div id="container2">
             <nav>
                 <ul>
-                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="youtubechannel.html">YouTube Channel</a></li>
+                    <!-- <li><a href="youtubechannel.html">YouTube Channel</a></li> -->
                 </ul>   
             </nav>  
         </div>
-        
-        <figure>
-            <img src="./images/P1012957.JPG" alt="A white with a green roof temple behind a path with tall green trees."/>
-            <figcaption>Tokyo, Japan</figcaption>
-        </figure>
     </header>
     
     <main>
+        <figure id="picture1">
+            <img src="./images/P1012957.JPG" alt="A white with a green roof temple behind a path with tall green trees."/>
+            <figcaption>Tokyo, Japan</figcaption>
+        </figure>
 
         <section id="about"> 
             <h3>My Story</h3>
-            <p>Registered nurse for 4+ years interested in providing services creating websites.</p>
-            <p>Currently, pursuing a computer science degree and spending extra time learning full stack development. This website is created with HTML, CSS, and Javascript.</p>
+            <p>Registered nurse for about 4 years interested in problem solving and creating websites.
+                Currently, pursuing a computer science degree and spending extra time learning full stack development. 
+                This website is created with HTML, CSS, and Javascript.
+            </p>
+            <p>
+                On my spare time, I like learning to play the guitar and learning to sew for my YouTube Channel.
+            </p>
         </section> 
 
         <section id="projects">
@@ -51,36 +55,35 @@
 
             <form action="" method="POST" id="form-id">
                 <fieldset>
-                <label for="full-name">Name (required):</label> 
-                <input
-                    required
-                    type="text"
-                    name="name"        
-                    id="full-name"
-                    minlength="2"
-                    maxlength="64"
-                    placeholder="John Doe"
-                    autocomplete="cc-given-name"
-                >
+                    <label for="full-name">Name* :</label> 
+                    <input
+                        required
+                        type="text"
+                        name="name"        
+                        id="full-name"
+                        minlength="2"
+                        maxlength="64"
+                        placeholder="John Doe"
+                        autocomplete="cc-given-name"
+                    >
 
-                <label for="email">Email Address (Required field):</label>
-                <input
-                    required
-                    type="email"
-                    name="email"        
-                    id="email"
-                    minlength="4"
-                    maxlength="64"
-                    placeholder="example@email.com"
-                    autocomplete="off"
-                > <!-- Name attribute used to identify form data after submitted to the server-->
-                
-                <label for="comments">Questions or Comments?</label>
-                <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+                    <label for="email">Email Address* :</label>
+                    <input
+                        required
+                        type="email"
+                        name="email"        
+                        id="email"
+                        minlength="4"
+                        maxlength="64"
+                        placeholder="example@email.com"
+                        autocomplete="off"
+                    > <!-- Name attribute used to identify form data after submitted to the server-->
+                    
+                    <label for="comments">Messages</label>
+                    <textarea cols="30" rows="10" name="comments" id="comments" placeholder="Type your message here."></textarea>
                 </fieldset>
-       
-            </form>
             <button type="submit" id="button-id form-id" aria-labelledby="">Submit Form</button>
+            </form>
         </section>
 
     </main>
@@ -88,28 +91,46 @@
     <footer>
 
         <section>
+            <div class="container3">
             <h4>Social</h4>
-                <figure>
-                    <a class="twitter-timeline" href="https://x.com/Cheesemilyy">
-                        <img src="./images/x-logo-black.png" alt="X or Twitter black logo."/>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </a> 
-                </figure>
-                <figure>
-                    <a class="linkedin-profile" href="https://www.linkedin.com/in/tsuiemily/">
-                        <img src="./images/LI-In-Bug.png" alt="X or Twitter black logo."/>
-                        <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-                    </a> 
-                </figure>
-            
+                <div class="social-container">
+                    <ul>
+                        <li>
+                            <figure>
+                                <a class="twitter-timeline" href="https://x.com/Cheesemilyy">
+                                    <img id="twitter-logo" src="./images/x-logo-black.png" alt="X or Twitter black logo." />
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </a> 
+                            </figure>
+                        </li>
+                        <li>  
+                            <figure>
+                                <a class="linkedin-profile" href="https://www.linkedin.com/in/tsuiemily/">
+                                    <img id="linkedin-logo" src="./images/LI-In-Bug.png" alt="Blue LinkedIn website logo."/>
+                                </a> 
+                            </figure>
+                        </li>  
+                        <li>  
+                            <figure>
+                                <a class="github-profile" href="https://github.com/emily-tsui">
+                                    <img id="github-logo" src="./images/github-mark.png" alt="Github cat outline logo."/>
+                                </a> 
+                            </figure>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container4">
             <h4>Contact Information</h4>
             <address>
-                <p><a href="tel:5555555555">555-555-5555</a></p>
-                <p><a href="mailto:fake@email.com">fake@email.com</a></p>
+                <p><a href="tel:5555555555">626-244-6022</a></p>
+                <p><a href="mailto:fake@email.com">emilytsui@nyu.edu</a></p>
             </address>
+            </div>
         </section>
 
-        <p>&copy; Emily Tsui 2025</p>
+        <p>&copy; 2026 Emily Tsui</p>
 
     </footer>
 

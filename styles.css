@@ -7,8 +7,8 @@ html {
     height: auto;
 }
 
-figure {
-    /* Centering an image needs width, margin left and right set to auto */
+#picture1 {
+    /* Centering an image and buttons needs width, margin left and right set to auto, and display block */
     display: block; 
     width: 260px;
     margin-left: auto;
@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    width: 200px;
+    width: 500px;
     margin-left: 20px;
 }
 
@@ -64,19 +64,34 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    list-style:none
 
 }
 
 main {
-    margin-top: 10px;
+    margin-top: 40px;
     margin-bottom: 50px;
     font-size: 20px;
+}
+
+#about {
+    margin: 20px 30px 20px 30px;
+}
+
+#projects {
+    margin: 20px 30px 20px 30px;
+}
+
+#contact {
+    margin: 20px 30px 20px 30px;
 }
 
 form {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
+
 }
 
 fieldset {
@@ -87,22 +102,77 @@ fieldset {
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+
+    display: inline-block;
+
+
 }
 
 label {
     display: block;
+    padding: 5px 0px 5px 0px;
 }
 
 input {
     width: 300px;
     display: block;
-
     border: 1px solid black;
     border-radius: 2px;
+    border: 1px solid #dfe1e5;
+    line-height: 24px; /*For height; use line-height and padding for input fields so all browsers register height.*/
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 textarea {
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid #dfe1e5;
     border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+fieldset {
+    border: none;
+    padding: 10px 0px;
+}
+
+button {
+    color: #0f1419;
+    border: 1px solid #cfd9de;
+    border-radius: 18px;
+    background: white;
+    padding: 10px 16px 10px 16px;
+    font-weight: bold;
+    margin: 0px 0px 0px 19px ;
+    display: block;
+
+}
+
+footer {
+    margin: 20px 30px 40px 30px;
+}
+
+#twitter-logo {
+    height: 20px;
+}
+
+#linkedin-logo {
+    height: 20px;  
+}
+
+#github-logo {
+    height: 20px;
+}
+
+.container3 figure{
+    display: flex;
+
+}
+
+.social-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style:none
+
 }
